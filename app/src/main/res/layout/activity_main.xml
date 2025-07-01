@@ -40,6 +40,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="monospace"
                 android:text="What's your name?"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +52,7 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
                 android:hint="Name"
-                app:boxStrokeColor="@color/black"
+                app:boxStrokeColor="@color/input_box_stroke_color"
                 app:boxStrokeWidth="1dp"
                 app:hintTextColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/AskName"

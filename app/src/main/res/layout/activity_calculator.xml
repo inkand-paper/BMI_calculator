@@ -63,6 +63,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="monospace"
                     android:padding="5dp"
+                    android:textColor="@color/black"
                     android:text="Age"
                     android:textSize="24sp" />
             </androidx.cardview.widget.CardView>
@@ -88,7 +89,7 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:paddingBottom="5dp"
-                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
                     app:hintTextColor="@color/black">
 
@@ -132,6 +133,7 @@
                     android:fontFamily="monospace"
                     android:padding="5dp"
                     android:text="Weight"
+                    android:textColor="@color/black"
                     android:textSize="24sp" />
 
 
@@ -159,7 +161,7 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:paddingBottom="5dp"
-                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
                     app:hintTextColor="@color/black">
 
@@ -202,6 +204,7 @@
                     android:fontFamily="monospace"
                     android:padding="5dp"
                     android:text="Height"
+                    android:textColor="@color/black"
                     android:textSize="24sp" />
 
 
@@ -229,7 +232,7 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:paddingBottom="5dp"
-                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
                     app:hintTextColor="@color/black">
 
