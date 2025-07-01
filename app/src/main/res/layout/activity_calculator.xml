@@ -95,6 +95,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/AgeET"
+                        android:textColor="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -168,6 +169,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:id="@+id/WeightET"
+                        android:textColor="@color/black"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"
                         android:maxLines="1">
@@ -239,6 +241,7 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:id="@+id/HeightET"
+                        android:textColor="@color/black"
                         android:layout_height="wrap_content"
                         android:inputType="numberDecimal"
                         android:maxLines="1">
