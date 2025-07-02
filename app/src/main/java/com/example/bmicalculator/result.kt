@@ -25,52 +25,45 @@ class result : AppCompatActivity() {
         binding.AgeTV.text = "Age\n$getAge"
         binding.HeightTV.text = "Height\n$getHeight"
         binding.WeightTV.text = "Weight\n$getWeight"
+        binding.Result.text = "%.2f".format(result)
 
         when{
             result > 0.0 && result <= 16.0 -> {
-                binding.Result.text = "%.2f".format(result)
                 binding.Stage.text = "Severely Underweight"
                 binding.StageText.text = "Critical level — medical attention needed"
             }
             result > 16.0 && result <= 16.9 -> {
-                binding.Result.text = "%.2f".format(result)
                 binding.Stage.text = "Moderately Underweight"
                 binding.StageText.text = "Needs nutritional improvement"
             }
-            result > 17.0 && result <= 18.4 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 16.9 && result <= 18.4 -> {
                 binding.Stage.text = "Mildly Underweight"
                 binding.StageText.text = "Low weight, potential risk"
             }
-            result > 18.5 && result <= 24.9 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 18.4 && result <= 24.9 -> {
                 binding.Stage.text = "Normal"
                 binding.StageText.text = "Healthy weight"
             }
-            result > 25.0 && result <= 29.9 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 24.9 && result <= 29.9 -> {
                 binding.Stage.text = "Overweight"
                 binding.StageText.text = "May lead to health problems"
             }
-            result > 30 && result <= 34.9 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 29.9 && result <= 34.9 -> {
                 binding.Stage.text = "Obese Class I (Moderate)"
                 binding.StageText.text = "Start of obesity"
             }
-            result > 35.0 && result <= 39.9 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 34.9 && result <= 39.9 -> {
                 binding.Stage.text = "Obese Class II (Severe)"
                 binding.StageText.text = "High health risk"
             }
-            result > 40.0 -> {
-                binding.Result.text = "%.2f".format(result)
+            result > 39.9 -> {
                 binding.Stage.text = "Obese Class III (Very Severe)"
                 binding.StageText.text = "Extremely high risk"
             }
 
         }
         binding.BackBtn2.setOnClickListener {
-            val intent = Intent(this,calculator::class.java)
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
 

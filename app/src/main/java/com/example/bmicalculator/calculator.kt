@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.bmicalculator.databinding.ActivityCalculatorBinding
+import com.google.android.material.textfield.TextInputLayout
 import kotlin.math.pow
 
 class calculator : AppCompatActivity() {
@@ -23,19 +24,29 @@ class calculator : AppCompatActivity() {
         binding.calculateBtn.setOnClickListener {
             calculate()
         }
-        binding.BackBtn1.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
+
     }
     private fun calculate(){
         val weightStr = binding.WeightET.text.toString()
         val heightStr = binding.HeightET.text.toString()
         val ageStr = binding.AgeET.text.toString()
-        if (weightStr.isEmpty() || heightStr.isEmpty() || ageStr.isEmpty()){
-            Toast.makeText(this, "Complete All the fields!!", Toast.LENGTH_SHORT).show()
-            return
+
+        var isValid = true
+        if (weightStr.isEmpty()){
+            binding.WeightET.error = "Please complete this field"
+            isValid = false
         }
+        if (heightStr.isEmpty()) {
+            binding.HeightET.error = "Please complete this field"
+            isValid = false
+        }
+        if (ageStr.isEmpty()){
+            binding.AgeET.error = "Please complete this field"
+            isValid = false
+        }
+        if (!isValid) return
+
+
         val weight = weightStr.toDouble()
         val height = heightStr.toDouble()
         val age = ageStr.toDouble()

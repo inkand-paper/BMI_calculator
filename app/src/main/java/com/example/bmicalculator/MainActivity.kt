@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
             val userName = binding.InputLayoutET1.text.toString().trim()
             val intent = Intent(this,calculator::class.java)
             intent.putExtra("Username",userName)
+
+            var isValid = true
+            if (userName.isEmpty()){
+                binding.InputLayoutET1.error = "Please complete this field"
+                isValid = false
+            }
+            if (!isValid) return@setOnClickListener
+
             startActivity(intent)
         }
 
