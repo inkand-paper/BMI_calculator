@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#472d30"
+    android:background="#232946"
     tools:context=".calculator">
 
     <TextView
@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="35dp"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif-medium"
         android:text="Hey user!"
-        android:textColor="#ffe1a8"
+        android:textColor="#e26d5c"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
         android:id="@+id/CardView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:cardBackgroundColor="#c9cba3"
+        app:cardBackgroundColor="#f6f6f6"
         app:cardCornerRadius="14dp"
         app:cardElevation="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="22dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -61,10 +61,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="monospace"
+                    android:fontFamily="sans-serif-medium"
                     android:padding="5dp"
-                    android:textColor="@color/black"
                     android:text="Age"
+                    android:textColor="#232946"
                     android:textSize="24sp" />
             </androidx.cardview.widget.CardView>
 
@@ -75,7 +75,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,17 +91,17 @@
                     android:paddingBottom="5dp"
                     app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="#232946">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/AgeET"
-                        android:textColor="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="sans-serif-medium"
                         android:imeOptions="actionNext"
                         android:inputType="numberDecimal"
-                        android:maxLines="1">
+                        android:maxLines="1"
+                        android:textColor="#232946">
 
                     </com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -123,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="22dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -132,10 +132,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="monospace"
+                    android:fontFamily="sans-serif-medium"
                     android:padding="5dp"
                     android:text="Weight"
-                    android:textColor="@color/black"
+                    android:textColor="#232946"
                     android:textSize="24sp" />
 
 
@@ -148,7 +148,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -165,16 +165,17 @@
                     android:paddingBottom="5dp"
                     app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="#232946">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
                         android:id="@+id/WeightET"
-                        android:imeOptions="actionNext"
-                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:imeOptions="actionNext"
                         android:inputType="numberDecimal"
-                        android:maxLines="1">
+                        android:maxLines="1"
+                        android:textColor="#232946">
 
                     </com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -196,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="22dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -205,10 +206,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="monospace"
+                    android:fontFamily="sans-serif-medium"
                     android:padding="5dp"
                     android:text="Height"
-                    android:textColor="@color/black"
+                    android:textColor="#232946"
                     android:textSize="24sp" />
 
 
@@ -221,7 +222,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                app:cardBackgroundColor="#ffe1a8"
+                app:cardBackgroundColor="#fffbe7"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -238,16 +239,17 @@
                     android:paddingBottom="5dp"
                     app:boxStrokeColor="@color/input_box_stroke_color"
                     app:boxStrokeWidth="1dp"
-                    app:hintTextColor="@color/black">
+                    app:hintTextColor="#232946">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
                         android:id="@+id/HeightET"
-                        android:imeOptions="actionNext"
-                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:imeOptions="actionNext"
                         android:inputType="numberDecimal"
-                        android:maxLines="1">
+                        android:maxLines="1"
+                        android:textColor="#232946">
 
                     </com.google.android.material.textfield.TextInputEditText>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -258,15 +260,14 @@
                 android:id="@+id/calculateBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="28dp"
                 android:backgroundTint="#e26d5c"
-                android:text="Calculate your BMI"
-                android:layout_marginEnd="16dp"
-                app:cornerRadius="4dp"
                 android:imeOptions="actionGo"
+                android:text="Calculate your BMI"
+                app:cornerRadius="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

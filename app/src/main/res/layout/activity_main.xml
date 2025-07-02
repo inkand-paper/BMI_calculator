@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#472d30"
+    android:background="#232946"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -19,7 +19,7 @@
         android:id="@+id/CardView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:cardBackgroundColor="#c9cba3"
+        app:cardBackgroundColor="#f6f6f6"
         app:cardCornerRadius="14dp"
         app:cardElevation="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,9 +38,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-medium"
                 android:text="What's your name?"
-                android:textColor="@color/black"
+                android:textColor="	#232946"
                 android:textSize="22sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -54,19 +54,19 @@
                 android:hint="Name"
                 app:boxStrokeColor="@color/input_box_stroke_color"
                 app:boxStrokeWidth="1dp"
-                app:hintTextColor="@color/black"
+                app:hintTextColor="#232946"
                 app:layout_constraintEnd_toEndOf="@id/AskName"
                 app:layout_constraintStart_toStartOf="@id/AskName"
                 app:layout_constraintTop_toBottomOf="@id/AskName">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/InputLayoutET1"
-                    android:imeOptions="actionNext"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:imeOptions="actionNext"
                     android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    android:maxLines="1">
+                    android:maxLines="1"
+                    android:textColor="#232946">
 
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
@@ -78,8 +78,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="#e26d5c"
-                android:text="Next"
                 android:imeOptions="actionGo"
+                android:text="Next"
                 app:cornerRadius="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
